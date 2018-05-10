@@ -1,5 +1,5 @@
 # AsyncGlobalEvalFunction
-A simple way to asynchronously defer the execution of javascript code stored as a string to prevent execution thread blockage. Example:
+A simple way to asynchronously defer the execution of javascript code stored as a string to prevent main thread blockage. Example:
 
 ```Javascript
 AsyncGlobalEvalFunction("function(i){console.log('Hello World ', i)}", function(f){f(1); f(2); f(3)});
